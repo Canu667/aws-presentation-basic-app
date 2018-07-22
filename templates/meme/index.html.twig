@@ -1,0 +1,24 @@
+<style>
+    .mems {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mem {
+        margin: 20px;
+        flex: 1 1;
+        justify-self: center;
+        display: flex;
+    }
+</style>
+
+<div class="mems">
+    {% for mem in mems %}
+        <div class="mem">
+            <img src="{{ mem.link }}" />
+            <button>
+               Buy {{ mem.name }}
+            </button>
+        </div>
+    {% endfor %}
+</div>

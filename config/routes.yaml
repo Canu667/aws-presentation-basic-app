@@ -1,0 +1,3 @@
+app_meme_contoller:
+    path: /meme/
+    controller: App\Controller\MemeController::index
